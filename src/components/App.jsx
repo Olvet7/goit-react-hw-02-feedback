@@ -3,7 +3,6 @@ import Notification from "./Notification";
 import Section from "./Section";
 import Statistics from "./Statistics";
 import FeedbackOptions from "./FeedbackOptions";
-import styles from './styles.module.css'
 
 class App extends Component {
 	state = {
@@ -30,7 +29,14 @@ class App extends Component {
   
 	render()
 	{return (
-	  <div className="styles.container">
+	  <div style={{
+		margin: '0 auto',
+        height: '100vh',
+		width: '600px',
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: 'green'
+      }}>
 		<Section title="Please leave feedback">
 		  <FeedbackOptions
 			onClick={this.onClick}

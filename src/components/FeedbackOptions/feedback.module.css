@@ -1,0 +1,12 @@
+.button_List {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    color: tomato;
+    min-width: 160px;
+    height: 30px;
+    font-size: 20px;
+}

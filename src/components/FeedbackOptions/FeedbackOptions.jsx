@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
+import fcss from './feedback.module.css'
 
 const FeedbackOptions =({onClick, feedbackOptions}) => {
 	return (
-		<div>
+		<div className={fcss.button_List}>
 			{Object.keys(feedbackOptions).map((key, index) => {
 				return(
 					<button
+					className={fcss.button}
 					key={index}
 					onClick={() => onClick(key)}>
 							{key}
